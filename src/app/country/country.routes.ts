@@ -1,3 +1,4 @@
+import { CountryPageComponent } from './pages/CountryPage/CountryPage.component';
 import { CountryLayoutComponent } from './layout/CountryLayout/CountryLayout.component';
 import { ByCapitalPageComponent } from './pages/by-capital-page/by-capital-page.component';
 import { Routes } from "@angular/router";
@@ -20,6 +21,10 @@ export const countryRoutes: Routes = [
       {
         path: 'by-region',
         component: ByRegionPageComponent
+      },
+      {
+        path: 'by/:code',
+        component: CountryPageComponent
       },
       {
         path: '**',
